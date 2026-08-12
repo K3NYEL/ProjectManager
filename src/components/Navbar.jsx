@@ -1,4 +1,4 @@
-import Button from "./Button";
+import { NavLink } from "react-router";
 
 function NavBar() {
   return (
@@ -14,7 +14,7 @@ function NavBar() {
         <span className="text-2xl font-bold">Menu</span>
       </div>
       <div className="text-white flex items-center gap-2  w-100 justify-center">
-        <Button />
+        <NavLink to="/documentation">Docs</NavLink>
         <a
           href="/Documentation"
           className="docs text-xl font-semibold p-2 border-2 transition-all hover:text-green-600"
