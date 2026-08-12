@@ -1,4 +1,4 @@
-import NavBar from "../components/navbar";
+import NavBar from "../components/Navbar";
 import Container from "../components/Container";
 import Card from "../components/Card";
 
