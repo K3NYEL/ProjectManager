@@ -1,8 +1,8 @@
-# 🤝 Guía de Contribución
+# Guía de Contribución
 
 Gracias por tu interés en contribuir a ProjectManager. Esta guía te ayudará a entender nuestros procesos y estándares.
 
-## 📋 Código de Conducta
+## Código de Conducta
 
 Por favor, sé respetuoso y profesional en todas las interacciones.
 
@@ -21,7 +21,7 @@ Por favor, sé respetuoso y profesional en todas las interacciones.
 5. Describe el comportamiento observado vs el esperado
 6. Incluye capturas de pantalla si es relevante
 
-## 💡 Sugerir Mejoras
+## Sugerir Mejoras
 
 1. Usa un título claro y descriptivo
 2. Proporciona descripción detallada de la mejora
@@ -29,7 +29,7 @@ Por favor, sé respetuoso y profesional en todas las interacciones.
 4. Explica por qué sería útil
 5. Enumera alternativas consideradas
 
-## 🔧 Proceso de Desarrollo
+## Proceso de Desarrollo
 
 ### Configuración Local
 
@@ -198,7 +198,7 @@ Describe cómo validaste los cambios
 - [ ] He probado los cambios localmente
 ```
 
-## ✅ Revisión de Código
+## Revisión de Código
 
 Los mantenedores revisarán tu PR. Por favor:
 
@@ -207,14 +207,14 @@ Los mantenedores revisarán tu PR. Por favor:
 3. Sé paciente - la revisión lleva tiempo
 4. Aprende del feedback
 
-## 📚 Recursos Útiles
+## Recursos Útiles
 
 - [React Docs](https://react.dev)
 - [React Router Docs](https://reactrouter.com)
 - [Tailwind CSS Docs](https://tailwindcss.com/docs)
 - [Vite Docs](https://vitejs.dev)
 
-## 🎯 Áreas de Contribución Bienvenidas
+## Áreas de Contribución Bienvenidas
 
 - [ ] Nuevos componentes útiles
 - [ ] Mejoras de rendimiento
