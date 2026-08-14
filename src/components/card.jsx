@@ -1,15 +1,32 @@
-function Card() {
+import PropTypes from 'prop-types';
+
+/**
+ * Card component for displaying content in a contained box
+ * @param {React.ReactNode} children - Card content
+ * @param {string} className - Additional CSS classes
+ * @param {string} variant - Card style variant
+ */
+function Card({ children, className = '', variant = 'default' }) {
+  const variantClass =
+    variant === 'primary'
+      ? 'bg-white border-green-300'
+      : variant === 'success'
+      ? 'bg-green-100 border-green-300'
+      : 'bg-gray-200 border-gray-300';
+
   return (
-    <div className="bg-gray-200 p-2 text-xl flex-wrap">
-      <p className="text-gray-500">
-        Este es un proyecto de prueba para la creación de un gestor de
-        proyectos, el cual tiene como objetivo principal la gestión de tareas y
-        proyectos de manera eficiente y organizada. El proyecto está
-        desarrollado utilizando React, Tailwind CSS y otras tecnologías modernas
-        para garantizar una experiencia de usuario fluida y atractiva.
-      </p>
+    <div
+      className={`${variantClass} p-4 rounded-lg border-2 text-gray-700 shadow-sm ${className}`.trim()}
+    >
+      {children}
     </div>
   );
 }
+
+Card.propTypes = {
+  children: PropTypes.node.isRequired,
+  className: PropTypes.string,
+  variant: PropTypes.oneOf(['default', 'primary', 'success']),
+};
 
 export default Card;

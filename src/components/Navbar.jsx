@@ -1,25 +1,83 @@
-import { NavLink } from "react-router";
+import { useState } from 'react';
+import PropTypes from 'prop-types';
+import { NavLink } from 'react-router-dom';
+import Menu from './Menu';
+import { NAV_LINKS, ROUTES } from '../constants/routes';
+import { APP_NAME } from '../constants/ui';
 
-function NavBar() {
+/**
+ * Navigation bar component
+ * @param {function} onMenuToggle - Callback when menu toggle is clicked
+ */
+function NavBar({ onMenuToggle }) {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const handleMenuToggle = () => {
+    setIsMenuOpen(!isMenuOpen);
+    onMenuToggle?.();
+  };
+
   return (
-    <nav className="nav flex justify-between px-5 h-17 w-full items-center bg-black flex-wrap sticky top-0 shadow-gray-400-md">
-      <div className="text-green-500 flex items-center gap-1">
-        <button
-          className="button text-2xl font-bold p-3 cursor-pointer"
-          type="button"
-          aria-label="Abrir menú"
-        >
-          <img className="h-6 w-6 bg-white" src="menu.png" alt="" />
-        </button>
-        <span className="text-2xl font-bold">Menu</span>
-      </div>
-      <div className="text-white flex items-center gap-2  w-100 justify-center">
-        <NavLink className="docs text-xl font-semibold p-2 border-2 transition-all hover:text-green-600"  to="/documentation">Docs</NavLink>
-        <NavLink className="home text-xl font-semibold p-2 border-2 transition-all hover:text-green-600" to="/home">Home</NavLink>
+    <>
+      <nav className="sticky top-0 z-30 flex justify-between px-5 h-17 w-full items-center bg-black shadow-lg">
+        {/* Logo and Menu Button */}
+        <div className="text-green-500 flex items-center gap-3">
+          <button
+            className="p-2 hover:bg-gray-800 rounded transition-colors"
+            type="button"
+            aria-label="Abrir menú"
+            onClick={handleMenuToggle}
+          >
+            <svg
+              className="h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+          <NavLink
+            to={ROUTES.HOME}
+            className="text-xl font-bold hover:text-green-400 transition-colors"
+          >
+            {APP_NAME}
+          </NavLink>
+        </div>
 
-      </div>
-    </nav>
+        {/* Navigation Links */}
+        <div className="hidden md:flex text-white items-center gap-2">
+          {NAV_LINKS.map((link) => (
+            <NavLink
+              key={link.path}
+              to={link.path}
+              className={({ isActive }) =>
+                `text-sm font-semibold px-4 py-2 rounded transition-colors ${
+                  isActive
+                    ? 'border-2 border-green-600 bg-green-600 text-white'
+                    : 'border-2 border-white hover:text-green-600'
+                }`
+              }
+            >
+              {link.label}
+            </NavLink>
+          ))}
+        </div>
+      </nav>
+
+      {/* Side Menu */}
+      <Menu isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />
+    </>
   );
 }
+
+NavBar.propTypes = {
+  onMenuToggle: PropTypes.func,
+};
 
 export default NavBar;
