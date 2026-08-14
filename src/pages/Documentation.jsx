@@ -11,21 +11,21 @@ function Documentation() {
     <>
       <NavBar />
       <Container>
-        <div className="flex flex-col w-full max-w-4xl gap-6 p-6">
+        <div className="flex flex-col w-full max-w-6xl lg:max-w-7xl gap-8 lg:gap-10 p-6 lg:p-10">
           <div>
-            <h1 className="text-4xl font-bold text-gray-800 mb-2">
+            <h1 className="text-5xl lg:text-6xl font-bold text-gray-800 mb-3 lg:mb-4">
               📚 Documentación
             </h1>
-            <p className="text-gray-600">
+            <p className="text-lg lg:text-xl text-gray-600">
               Guía completa del proyecto ProjectManager
             </p>
           </div>
 
           <Card variant="primary">
-            <h2 className="text-2xl font-bold text-gray-800 mb-3">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-800 mb-4 lg:mb-5">
               🏗️ Estructura del Proyecto
             </h2>
-            <pre className="bg-gray-900 text-green-400 p-4 rounded overflow-x-auto text-sm">
+            <pre className="bg-gray-900 text-green-400 p-6 lg:p-8 rounded overflow-x-auto text-base lg:text-lg">
 {`src/
 ├── components/       # Componentes reutilizables
 ├── pages/           # Páginas principales
@@ -37,10 +37,10 @@ function Documentation() {
           </Card>
 
           <Card variant="success">
-            <h2 className="text-2xl font-bold text-gray-800 mb-3">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-800 mb-4 lg:mb-5">
               🛠️ Tecnologías Utilizadas
             </h2>
-            <div className="grid grid-cols-2 gap-4 text-gray-700">
+            <div className="grid grid-cols-2 gap-6 lg:gap-8 text-base lg:text-lg text-gray-700">
               <div>
                 <strong>Frontend:</strong>
                 <ul className="mt-2 space-y-1">
@@ -63,22 +63,22 @@ function Documentation() {
           </Card>
 
           <Card>
-            <h2 className="text-2xl font-bold text-gray-800 mb-3">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-800 mb-4 lg:mb-5">
               🚀 Comandos Disponibles
             </h2>
-            <div className="space-y-3 text-gray-700">
-              <div className="bg-gray-100 p-3 rounded font-mono">
+            <div className="space-y-4 lg:space-y-5 text-base lg:text-lg text-gray-700">
+              <div className="bg-gray-100 p-4 lg:p-6 rounded font-mono text-base lg:text-lg">
                 <strong>npm run dev</strong> - Inicia el servidor de desarrollo
               </div>
-              <div className="bg-gray-100 p-3 rounded font-mono">
+              <div className="bg-gray-100 p-4 lg:p-6 rounded font-mono text-base lg:text-lg">
                 <strong>npm run build</strong> - Compila el proyecto para
                 producción
               </div>
-              <div className="bg-gray-100 p-3 rounded font-mono">
+              <div className="bg-gray-100 p-4 lg:p-6 rounded font-mono text-base lg:text-lg">
                 <strong>npm run lint</strong> - Ejecuta ESLint para verificar
                 el código
               </div>
-              <div className="bg-gray-100 p-3 rounded font-mono">
+              <div className="bg-gray-100 p-4 lg:p-6 rounded font-mono text-base lg:text-lg">
                 <strong>npm run preview</strong> - Previsualiza la compilación
               </div>
             </div>

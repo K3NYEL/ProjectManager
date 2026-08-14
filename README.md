@@ -171,7 +171,7 @@ Este proyecto está bajo la licencia MIT. Ver [LICENSE](LICENSE) para más detal
 
 ## 👤 Autor
 
-Desarrollo del ProjectManager
+[K3NYEL/](https://github.com/K3NYEL/ProjectManager.git)
 
 ## 🙏 Contribuciones
 

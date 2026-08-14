@@ -16,21 +16,21 @@ function Home() {
     <>
       <NavBar />
       <Container>
-        <div className="flex flex-col w-full max-w-2xl gap-6 p-6 overflow-y-auto">
+        <div className="flex flex-col w-full max-w-5xl lg:max-w-6xl gap-8 lg:gap-10 p-6 lg:p-10 overflow-y-auto">
           <div>
-            <h1 className="text-4xl font-bold text-gray-800 mb-2">
+            <h1 className="text-5xl lg:text-6xl font-bold text-gray-800 mb-3 lg:mb-4">
               ProjectManager
             </h1>
-            <p className="text-gray-600">
+            <p className="text-lg lg:text-xl text-gray-600">
               Un gestor de proyectos moderno y eficiente
             </p>
           </div>
 
           <Card variant="primary">
-            <h2 className="text-2xl font-bold text-gray-800 mb-3">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-800 mb-4 lg:mb-5">
               Descripción
             </h2>
-            <p className="text-gray-700 leading-relaxed">
+            <p className="text-lg lg:text-xl text-gray-700 leading-relaxed">
               Este es un proyecto de prueba para la creación de un gestor de
               proyectos, el cual tiene como objetivo principal la gestión de
               tareas y proyectos de manera eficiente y organizada. El proyecto
@@ -41,10 +41,10 @@ function Home() {
           </Card>
 
           <Card variant="success">
-            <h2 className="text-2xl font-bold text-gray-800 mb-3">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-800 mb-4 lg:mb-5">
               Características
             </h2>
-            <ul className="space-y-2 text-gray-700">
+            <ul className="space-y-3 lg:space-y-4 text-lg lg:text-xl text-gray-700">
               <li> - Interfaz moderna y responsive</li>
               <li> - Navegación fluida con React Router</li>
               <li> - Estilos con Tailwind CSS</li>
@@ -54,20 +54,20 @@ function Home() {
             </ul>
           </Card>
 
-          <div className="flex gap-4 pt-4">
+          <div className="flex flex-col lg:flex-row gap-4 lg:gap-6 pt-6 lg:pt-8">
             <Button
               variant="primary"
               size="large"
               onClick={handleDemoClick}
             >
-              🚀 Explorar Proyecto
+              Explorar Proyecto
             </Button>
             <Button
               variant="secondary"
               size="large"
-              onClick={() => window.open('https://github.com')}
+              onClick={() => window.open('https://github.com/K3NYEL/ProjectManager')}
             >
-              📖 Documentación
+              Documentación
             </Button>
           </div>
         </div>

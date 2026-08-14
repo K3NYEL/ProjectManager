@@ -16,7 +16,7 @@ function Card({ children, className = '', variant = 'default' }) {
 
   return (
     <div
-      className={`${variantClass} p-4 rounded-lg border-2 text-gray-700 shadow-sm ${className}`.trim()}
+      className={`${variantClass} p-6 lg:p-8 rounded-lg border-2 text-gray-700 shadow-sm text-base lg:text-lg ${className}`.trim()}
     >
       {children}
     </div>

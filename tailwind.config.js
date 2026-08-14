@@ -12,10 +12,12 @@ export default {
       },
       spacing: {
         '17': '4.25rem',
+        '20': '5rem',
         '370': '23.125rem',
         '155': '9.6875rem',
       },
       height: {
+        '20': '5rem',
         '155': '9.6875rem',
       },
       width: {

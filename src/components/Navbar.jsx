@@ -19,17 +19,17 @@ function NavBar({ onMenuToggle }) {
 
   return (
     <>
-      <nav className="sticky top-0 z-30 flex justify-between px-5 h-17 w-full items-center bg-black shadow-lg">
+      <nav className="sticky top-0 z-30 flex justify-between px-6 lg:px-8 h-17 lg:h-20 w-full items-center bg-black shadow-lg">
         {/* Logo and Menu Button */}
-        <div className="text-green-500 flex items-center gap-3">
+        <div className="text-green-500 flex items-center gap-3 lg:gap-4">
           <button
-            className="p-2 hover:bg-gray-800 rounded transition-colors"
+            className="p-2 lg:p-3 hover:bg-gray-800 rounded transition-colors"
             type="button"
             aria-label="Abrir menú"
             onClick={handleMenuToggle}
           >
             <svg
-              className="h-6 w-6"
+              className="h-6 lg:h-7 w-6 lg:w-7"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -44,20 +44,20 @@ function NavBar({ onMenuToggle }) {
           </button>
           <NavLink
             to={ROUTES.HOME}
-            className="text-xl font-bold hover:text-green-400 transition-colors"
+            className="text-xl lg:text-2xl font-bold hover:text-green-400 transition-colors"
           >
             {APP_NAME}
           </NavLink>
         </div>
 
         {/* Navigation Links */}
-        <div className="hidden md:flex text-white items-center gap-2">
+        <div className="hidden md:flex text-white items-center gap-3 lg:gap-4">
           {NAV_LINKS.map((link) => (
             <NavLink
               key={link.path}
               to={link.path}
               className={({ isActive }) =>
-                `text-sm font-semibold px-4 py-2 rounded transition-colors ${
+                `text-base lg:text-lg font-semibold px-5 lg:px-6 py-2 lg:py-3 rounded transition-colors ${
                   isActive
                     ? 'border-2 border-green-600 bg-green-600 text-white'
                     : 'border-2 border-white hover:text-green-600'

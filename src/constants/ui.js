@@ -9,9 +9,9 @@ export const BUTTON_VARIANTS = {
 };
 
 export const BUTTON_SIZES = {
-  small: 'px-2 py-1 text-sm',
-  medium: 'px-4 py-2 text-base',
-  large: 'px-6 py-3 text-lg',
+  small: 'px-3 py-1.5 text-sm lg:text-base',
+  medium: 'px-5 py-2.5 text-base lg:text-lg',
+  large: 'px-7 py-3.5 text-lg lg:text-xl',
 };
 
 export const APP_NAME = 'ProjectManager';

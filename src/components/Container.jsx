@@ -8,7 +8,7 @@ import PropTypes from 'prop-types';
 function Container({ children, className = '' }) {
   return (
     <div className={`flex w-full flex-col min-h-[calc(100vh-68px)] items-center justify-center ${className}`.trim()}>
-      <main className="flex justify-center w-full items-center py-8">
+      <main className="flex justify-center w-full items-center py-8 lg:py-12">
         {children}
       </main>
     </div>
