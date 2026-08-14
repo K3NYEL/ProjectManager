@@ -1,19 +1,11 @@
-# 📋 ProjectManager
+# ProjectManager
 
-Un gestor de proyectos moderno y eficiente construido con React, Tailwind CSS y Vite. Proporciona una interfaz intuitiva para la gestión de tareas y proyectos.
+Este es un proyecto personal(Por el momento), 
 
-## 🌟 Características
+## Características
 
-- ✅ **Interfaz Moderna**: Diseño responsivo con Tailwind CSS
-- ✅ **Navegación Fluida**: React Router para navegación sin recargar
-- ✅ **Componentes Reutilizables**: Arquitectura modular y escalable
-- ✅ **Menú Interactivo**: Sidebar responsivo para navegación
-- ✅ **Manejo de Errores**: Error Boundary para capturar errores
-- ✅ **Validación de Props**: PropTypes para seguridad de tipos
-- ✅ **Estilos Optimizados**: Tailwind CSS con configuración personalizada
-- ✅ **Linting**: ESLint para mantener código limpio
 
-## 🚀 Inicio Rápido
+## Inicio Rápido
 
 ### Requisitos
 - Node.js 14+ 
@@ -77,7 +69,7 @@ ProjectManager/
 └── README.md             # Este archivo
 ```
 
-## 🛠️ Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
 ### Frontend
 - **React** 19.2.8 - Biblioteca UI
@@ -90,7 +82,7 @@ ProjectManager/
 - **PropTypes** 15.x - Validación de tipos
 - **@vitejs/plugin-react** 6.0.4 - Plugin de React para Vite
 
-## 📚 Componentes Principales
+## Componentes Principales
 
 ### Button
 ```jsx
@@ -126,7 +118,7 @@ Barra de navegación con menú interactivo
 ### Menu
 Menú lateral desplegable con navegación
 
-## 🎨 Personalización
+## Personalización
 
 ### Modificar Rutas
 Edita [src/constants/routes.js](src/constants/routes.js):
@@ -147,7 +139,7 @@ export const BUTTON_VARIANTS = {
 };
 ```
 
-## 🔍 Mejoras Futuras
+## Mejoras Futuras
 
 - [ ] Autenticación de usuarios
 - [ ] Base de datos (Firebase/MongoDB)
@@ -173,7 +165,7 @@ Este proyecto está bajo la licencia MIT. Ver [LICENSE](LICENSE) para más detal
 
 [K3NYEL](https://github.com/K3NYEL/ProjectManager.git)
 
-## 🙏 Contribuciones
+## Contribuciones
 
 Las contribuciones son bienvenidas. Por favor:
 1. Fork el proyecto
