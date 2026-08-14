@@ -4,8 +4,6 @@ Este es un proyecto personal(Por el momento),
 
 ## Características
 
-## Inicio Rápido
-
 ### Requisitos
 
 - Node.js 14+
