@@ -1,6 +1,6 @@
 # Guía de Contribución
 
-Gracias por tu interés en contribuir a ProjectManager. Esta guía te ayudará a entender nuestros procesos y estándares.
+Gracias por tu interés en contribuir a GabetDisk. Esta guía te ayudará a entender nuestros procesos y estándares.
 
 ## Código de Conducta
 
@@ -21,14 +21,6 @@ Por favor, sé respetuoso y profesional en todas las interacciones.
 5. Describe el comportamiento observado vs el esperado
 6. Incluye capturas de pantalla si es relevante
 
-## Sugerir Mejoras
-
-1. Usa un título claro y descriptivo
-2. Proporciona descripción detallada de la mejora
-3. Incluye ejemplos de cómo funcionaría
-4. Explica por qué sería útil
-5. Enumera alternativas consideradas
-
 ## Proceso de Desarrollo
 
 ### Configuración Local
@@ -36,10 +28,10 @@ Por favor, sé respetuoso y profesional en todas las interacciones.
 ```bash
 # 1. Fork el repositorio
 # 2. Clona tu fork
-git clone https://github.com/tu-usuario/ProjectManager.git
+git clone https://github.com/tu-usuario/GabetDisk.git
 
 # 3. Agrega upstream
-git remote add upstream https://github.com/original/ProjectManager.git
+git remote add upstream https://github.com/original/GabetDisk.git
 
 # 4. Instala dependencias
 npm install
@@ -157,7 +149,7 @@ npm run dev
 npm run build
 ```
 
-## 📤 Enviar un Pull Request
+## Enviar un Pull Request
 
 1. Push a tu rama
    ```bash
@@ -206,13 +198,6 @@ Los mantenedores revisarán tu PR. Por favor:
 2. Haz cambios solicitados en commits adicionales
 3. Sé paciente - la revisión lleva tiempo
 4. Aprende del feedback
-
-## Recursos Útiles
-
-- [React Docs](https://react.dev)
-- [React Router Docs](https://reactrouter.com)
-- [Tailwind CSS Docs](https://tailwindcss.com/docs)
-- [Vite Docs](https://vitejs.dev)
 
 ## Áreas de Contribución Bienvenidas
 
